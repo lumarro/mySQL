@@ -23,8 +23,7 @@ USE `ejercicio4` ;
 CREATE TABLE IF NOT EXISTS `ejercicio4`.`tablita` (
   `idtablita` INT NOT NULL,
   `fecha` DATE NULL,
-  `textogrande` VARCHAR(45) NULL,
-  `tablitacol` LONGTEXT NULL,
+  `textogrande` LONGTEXT NULL,
   `numeroentero` INT NULL,
   `decimal` DECIMAL NULL,
   PRIMARY KEY (`idtablita`))

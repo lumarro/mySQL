@@ -125,14 +125,3 @@ VALUES
   (6,"Nunc mauris. Morbi non sapien molestie orci tincidunt adipiscing. Mauris","586455","Henegouwen","Chile","13","P.O. Box 198, 3338 Accumsan Rd.","mauris.blandit.mattis@protonmail.edu","Sonya Deleon","1-687-785-5858"),
   (10,"Sed auctor odio a purus. Duis elementum, dui quis accumsan","45482-75788","North Chungcheong","Nigeria","9","P.O. Box 895, 1091 Dictum Avenue","viverra.donec@hotmail.com","Fletcher Potts","1-305-511-4862"),
   (1,"Duis dignissim tempor arcu. Vestibulum ut eros non enim commodo","54374","Northern Territory","Peru","17","601-8990 Leo. St.","ipsum.cursus@outlook.org","Kelly West","(125) 405-5123");
-
-SELECT postalzip 'Código postal', region 'Región', country 'País' FROM myTable;
-SELECT phone FROM myTable WHERE phone LIKE '(811)%';
-SELECT * FROM myTable WHERE country = 'Spain' OR country = 'Italy';
-SELECT COUNT(*) FROM myTable;
-SELECT region, country, postalZip FROM myTable WHERE id IN (SELECT id FROM myTable WHERE country = 'Germany' OR country = 'Turkey');
-SELECT MIN(id), MAX(id) FROM myTable;
-SELECT COUNT(id) AS 'Nº de registros', country 'País' FROM myTable GROUP BY country;
-SELECT postalZip FROM myTable ORDER BY postalZip LIMIT 10;
-DELETE FROM myTable WHERE country = 'Singapore';
-UPDATE myTable SET country='España' WHERE country='Spain';
